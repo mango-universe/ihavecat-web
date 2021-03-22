@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: #00cec9;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.header__title h1 {
+    width: 400px;
+    font-size: 20px;
+    color: white;
+    margin: 0 0 0 30%;
+    padding: 5px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.header__title span {
+    font-size: 10px;
+}
+
+.header__menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 90px;
+}
+
+.header__menu ul {
+    display: flex;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    list-style: none;
+    cursor: pointer;
+}
+
+.header__menu li {
+    margin-right: 15px;
+}
+
+.header__menu li:hover {
+    opacity: 0.8;
+}

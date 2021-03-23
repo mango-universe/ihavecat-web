@@ -2,12 +2,12 @@ import React from 'react';
 import './../css/header.css';
 import { Link } from 'react-router-dom';
 
-function Header() {
+const Header = () => {
     return(
         <header className="header">
             <div className="header__title">
                 <h1>
-                    <Link to="/main">
+                    <Link to='/main'>
                         나만고양이없어&nbsp;
                         <span>VER.1</span>
                     </Link>

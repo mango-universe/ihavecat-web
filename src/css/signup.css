@@ -63,8 +63,8 @@ input:-webkit-autofill {
 }
 
 .signup-item__profile {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     cursor: pointer;
     margin: 30px auto;

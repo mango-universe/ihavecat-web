@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import './../css/signup.css';
 
-const  Signup = () => {
+const Signup = () => {
     const { register, handleSubmit, errors, setError } = useForm({
         mode: 'onBlur'
     });
@@ -22,6 +22,8 @@ const  Signup = () => {
             setFile(file);
             setProfileURL(reader.result);
         }
+
+        reader.readAsDataURL(file);
     }
 
     const emailCheck = () => {

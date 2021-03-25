@@ -53,7 +53,7 @@ input:-webkit-autofill {
 
 .signup-title {
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .signup-item {
@@ -63,8 +63,9 @@ input:-webkit-autofill {
 }
 
 .signup-item__profile {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
     cursor: pointer;
     margin: 30px auto;
     transform: translateX(85px);
@@ -76,12 +77,12 @@ input:-webkit-autofill {
 }
 
 .signup-item input[type='file'] {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 120px;
     opacity: 0;
     cursor: pointer;
     position: absolute;
-    transform: translate(3px, 7px);
+    transform: translate(-5px, 4px);
 }
 
 .signup-button button {

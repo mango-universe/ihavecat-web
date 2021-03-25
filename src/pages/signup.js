@@ -64,14 +64,14 @@ const Signup = () => {
 
     let profilePreview = null;
     
-    if (file !== ''){
+    if (file !== '') {
         profilePreview = <img className='signup-item__profile' src={profileURL} alt="user-profile" />
     } else {
         profilePreview = <img className='signup-item__profile' src='/images/user-default.png' alt="user-profile" />
     }
 
     return(
-        <section>
+        <section className="signup-section">
             <form className="signup" onSubmit={ handleSubmit(onSubmit) }>
                 <h1 className="signup-title">REGISTER</h1>
 

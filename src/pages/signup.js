@@ -29,7 +29,7 @@ const Signup = () => {
     const emailCheck = () => {
         console.log(emailValue);
 
-        // DB에 입력된 ID와 비교하여 없으면 통과, 중복될 경우 error
+        // DB에 입력된 ID와 비교하여 없으면 통과, 중복될 경우 error!!
 
         // const dbEmailValue = '';
 

@@ -72,7 +72,7 @@ const Signup = () => {
 
     return(
         <section className="signup-section">
-            <form className="signup" onSubmit={ handleSubmit(onSubmit) }>
+            <form className="signup" onSubmit={ handleSubmit(onSubmit) } >
                 <h1 className="signup-title">REGISTER</h1>
 
                 <div className="signup-item">
@@ -102,8 +102,8 @@ const Signup = () => {
                                             messeage: "이메일 형식에 맞추어 입력 해주세요"
                                     }
                                 })
-                         } 
-                         onChange={ (e) => { setEmailValue(e.target.value) } } />
+                            } 
+                            onChange={e => setEmailValue(e.target.value)} />
                     &nbsp;&nbsp;<button type="button" className="btn" onClick={ emailCheck }>중복확인</button><br />
                     <p className="signup-error-msg">
                      {errors.email && errors.email.message}
@@ -126,7 +126,7 @@ const Signup = () => {
                                             message: "닉네임은 최대 10글자 이내로 입력 해주세요"}
                                 })
                             } 
-                            onChange={ (e) => { setNicknameValue(e.target.value) } } />
+                            onChange={e => setNicknameValue(e.target.value)} />
                     &nbsp;&nbsp;<button type="button" className="btn" onClick={ nicknameCheck }>중복확인</button><br />
                     <p className="signup-error-msg">
                      {errors.nickname && errors.nickname.message}
@@ -149,7 +149,7 @@ const Signup = () => {
                                             message: "패스워드는 8자리 이상 20자리 이하 입력"}
                                 })
                             } 
-                            onChange={ (e) => { setPasswordValue(e.target.value) } }  /><br />
+                            onChange={e => setPasswordValue(e.target.value)} /><br />
                     <p className="signup-error-msg">
                      {errors.password && errors.password.message}
                     </p><br />
@@ -165,7 +165,7 @@ const Signup = () => {
                                         message: "패스워드를 다시 입력 해주세요"}
                                 })
                             } 
-                            onChange={ (e) => { passwordCheck(e) } } /><br />
+                            onChange={e => passwordCheck(e)} /><br />
                     <p className="signup-error-msg">
                      {errors.password2 && errors.password2.message}
                     </p><br />
